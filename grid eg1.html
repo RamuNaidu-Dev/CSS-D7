@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid eg-1</title>
+
+    <style>
+
+        .container{
+
+            align-content: center;
+            background-color: rgb(73, 68, 68);
+
+            height:auto;
+            width:fit-content;
+
+            padding: 5%;
+
+            margin-top: 3%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+            border: 5px solid;
+
+        }
+
+        .container{
+            display: grid;
+
+            grid-template-columns: 75% 75% 75%;
+            grid-template-rows: 50% 95% 95% 50%;
+
+            padding: 15% ;
+            justify-content: center;
+            column-gap: 10px;
+            row-gap: 10px;  
+
+        }
+
+        .item1 , .item2 , .item3 , .item4 , .item5 , .item6 , .item7 , .item8 , .item9 , .item10{
+
+            border: 5px solid black;
+
+            align-content: center;
+            font-size: 20px;
+        }
+
+        .item1{
+            grid-column: 1/4;
+            background-color: rgba(212, 21, 230, 0.815);
+            color: white;
+            
+        }
+
+        .item2{
+            grid-row: 2/4;
+            background-color: rgb(58, 189, 127);
+            color: white;
+        }
+
+        .item3{
+            grid-column: 2/4;
+            background-color: rgb(97, 122, 190);
+            color: white;
+        }
+
+        .item4 , .item5 {
+            background-color: rgb(97, 122, 190);
+            color: white;
+        }
+
+        .item6{
+            grid-column: 1/4;
+            background-color: rgba(212, 21, 230, 0.815);
+            color: white;
+        }
+
+        
+
+
+
+    </style>
+
+</head>
+<body>
+
+<center>
+
+    <div class="container">
+
+        <div class="item1">Header</div>
+
+        <div class="item2">Sidebar</div>
+
+        <div class="item3">Content-1</div>
+
+        <div class="item4">Content-2</div>
+
+        <div class="item5">Content-3</div>
+
+        <div class="item6">Footer</div>
+
+    </div>
+
+</center>
+    
+</body>
+</html>
